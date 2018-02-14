@@ -1,23 +1,23 @@
-N00 G90 G20		                                  ;Absolute Coordinate
-N01 M06 T01		                                  ;Tool Change – Tool 1 -1/8 End Mill
-N02 M03 S3000	                                  ;Spindle On CW – Speed 3000 RPM
-N03 G00	X0.3125	Y0.3125     									  ;Rapid to Above Point A
-N04	G00 Z0.1								                    ;Rapid to 0.1 Above Part
-N05	G01	Z-0.0625 F9                     				;Plunge 1/16 @ 9 in./min
-N06 X0.3125	Y1.6875									            ;Rapid to Point B
-N07	G02	X0.3125	Y1.000 I0.6250 J1.3125 R0.3125  ;Clockwise to Point D around Point C
-N08	X0.9375 Y0.3125	I0.5000	J0.5625	R0.3750			;Clockwise to Point F around Point E
-N09	G00 Z0.1								                    ;Rapid 0.1 Above Part
-N10	X1.1875	Y1.6875									            ;Rapid 0.1 Above Part at Point G
-N11	G01	Z-0.0625								                ;Plunge into Part
-N12	X1.8125	Y1.6875									            ;Rapid to Point H
-N13	X1.1875	Y0.3125									            ;Rapid to Point I
-N14	X1.8125	Y0.3125									            ;Rapid to Point J
-N15	G00	Z0.1					                      		;Rapid 0.1 Above Part
-N16	X2.0625	Y0.3125								              ;Rapid 0.1 Above Part at Point K
-N17	G01	Z-0.0625						                  	;Plunge into Part
-N18	X2.2500	Y1.6875									            ;Rapid to Point L
-N19	X2.3750	Y1.0625									            ;Rapid to Point M
-N20	X2.5000	Y1.6875									            ;Rapid to Point N
-N21	X2.6875	Y0.3125									            ;Rapid to Point O
-N22	G00	Z0.1								                    ;Rapid above part
+N00 G90 G20  ;Absolute Coordinate
+N01 M06 T01 ;Tool Change – Tool 1 -1/8 End Mill
+N02 M03 S3000 ;Spindle On CW – Speed 3000 RPM
+N03 G00 X0.3125 Y0.3125 ;Rapid to Above Point A
+N04 G00 Z0.1 ;Rapid to 0.1 Above Part
+N05 G01 Z-0.0625 F9 ;Plunge 1/16 @ 9 in./min
+N06 X0.3125 Y1.6875 ;Rapid to Point B
+N07 G02 X0.3125 Y1.000 I0.6250 J1.3125 R0.3125 ;Clockwise to Point D around Point C
+N08 X0.9375 Y0.3125 I0.5000 J0.5625 R0.3750 ;Clockwise to Point F around Point E
+N09 G00 Z0.1 ;Rapid 0.1 Above Part
+N10 X1.1875 Y1.6875 ;Rapid 0.1 Above Part at Point G
+N11 G01 Z-0.0625 ;Plunge into Part
+N12 X1.8125 Y1.6875 ;Rapid to Point H
+N13 X1.1875 Y0.3125 ;Rapid to Point I
+N14 X1.8125 Y0.3125 ;Rapid to Point J
+N15 G00 Z0.1 ;Rapid 0.1 Above Part
+N16 X2.0625 Y0.3125 ;Rapid 0.1 Above Part at Point K
+N17 G01 Z-0.0625 ;Plunge into Part
+N18 X2.2500 Y1.6875 ;Rapid to Point L
+N19 X2.3750 Y1.0625 ;Rapid to Point M
+N20 X2.5000 Y1.6875 ;Rapid to Point N
+N21 X2.6875 Y0.3125 ;Rapid to Point O
+N22 G00 Z0.1 ;Rapid above part
